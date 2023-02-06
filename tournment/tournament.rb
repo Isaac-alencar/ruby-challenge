@@ -5,7 +5,7 @@ class Tournament
   class << self
     def tally(input)
       teams = Teams.new(input)
-      "#{tally_table_head}#{teams.call.each(&:to_s).join('')}"
+      "#{tally_table_head}#{teams.call.each(&:to_s).join}"
     end
 
     private
@@ -57,7 +57,7 @@ class Team
   end
 
   def points
-    @draws_count * POINTS_RULE[:draw] + @wins_count * POINTS_RULE[:win]
+    (@draws_count * POINTS_RULE[:draw]) + (@wins_count * POINTS_RULE[:win])
   end
 
   def matches_played

@@ -10,6 +10,6 @@ class Complement
   }.freeze
 
   def self.of_dna(nucleotides)
-    nucleotides.split('').map { |nucleotide| RNA_COMPLEMENT[nucleotide] }.join
+    nucleotides.chars.map { |nucleotide| RNA_COMPLEMENT[nucleotide] }.join
   end
 end

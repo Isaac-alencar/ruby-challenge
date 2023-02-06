@@ -12,8 +12,8 @@ class Diamond
     space = letters.length
     top = letters
           .map.with_index do |letter, i|
-      "#{format_str(letter, space, i)}"\
-      "#{format_str(letter, space, i).reverse[1..]}"\
+      "#{format_str(letter, space, i)}" \
+        "#{format_str(letter, space, i).reverse[1..]}" \
     end
     bottom = top.reverse[1..]
 

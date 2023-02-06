@@ -1,0 +1,26 @@
+AllCops:
+  NewCops: enable
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
+Naming/PredicateName:
+  Exclude:
+    - 'spec/**/*'
+    - 'amusement_park/attendee.rb'
+
+Style/Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  Exclude:
+    - 'Gemfile'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/LineContinuationLeadingSpace:
+  Enabled: false
